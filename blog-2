@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Islam's blog - Summer Post</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Theme CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand" href="index.html">Islam Nurdin</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="about.html">About</a>
+                    </li>
+                    <li>
+                        <a href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Header -->
+    <!-- Set your background image for this header on the line below. -->
+    <header class="intro-header" style="background-image: url('img/summertime.jpg')">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <div class="post-heading">
+                        <h1>Summer camp in UCA.</h1>
+                        <h2 class="subheading">Things I like from Summer Camp 2017</h2>
+                        <span class="meta">Posted by <a href="#">Aisulu Maulen</a> on July 27, 2017</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <p>When we hear the word camp,we think that it is a place with temporary accommodation of huts or tents,where we can do interesting activities,spend our whole time in the nature and etc. But have you ever been in  camp which was held in university,in a real campus?Have you ever experienced the vibe or feeling of real student s life,even though you have not graduated from high school yet?Luckily,I had an amazing summer camp at a wonderful university in Naryn.Truthfully,this is my first ever camp.In this blog I would like to express my opinion about summer camp at the UCA..</p>
+
+                    <h2>Campus.</h2>
+
+                    <p>I want to start with campus. One of the things that I liked the most about camp was the campus. I like the design.It was unique and glorious.(That is why I like Japanese architect)The classrooms were nice. Classrooms were in different colors,like red,yellow,green and etc. If you look at campus from 100m away,it looks like Villa boutiques and restaurants in Almaty.</p>
+
+
+                    <h2>Sessions and evening activities.</h2>
+
+                    <p>We had 3 sessions every day:English,Math and Science.All the lessons were really interesting,I learnt about a lot of things,which I will need in my life.Every subject had its own feature.For instance,our english language teacher had a unique teaching method,every day he motivated us,gave us some power.And I really liked it. The next I really liked was evening activities.We had different competitions,especially I adored having a debate and building our own country.In evening activities I could clearly see that every person had a talent, leadership skills,they were good at something and I was able to learn some skills from them.</p>
+
+                    <h2>Friends.</h2>
+
+                    <p>I guess this is the most important part of this blog.In only 2 weeks I met 73 different people with different personality,talent,opinion.All of them were talented and incredible.Some of them became my lifelong friends.I was blessed to meet them,as we had a lot of things in common,some of them inspired me.For example,Aizada is a cool girl,we had same interests,ideas,future plans.We were like 2 people with same mindsets.Islam is from Kyrgyzstan.I call him a computer genius.He is only 16 years old,and he already knows how to code(or whatever they call it),create apps,websites also he has a great writing skills.That is fantastic.Aiperi is from Naryn.Thanks her I know some facts about KG and Naryn.In addition there were a lot of students that are awesome.</p>
+
+                    <p>
+                    To overcome,I  extremely liked the summer camp at the UCA.I am extremely happy to be a part of UCA summer camp 2017.I had amazing 2 weeks,which I spend to have a rest and upgrade my skills in English,Math and Science.</p>
+
+                    
+                </div>
+
+
+            </div>
+        </div>
+    </article>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                    <ul class="list-inline text-center">
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <span class="fa-stack fa-lg">
+                                    <i class="fa fa-circle fa-stack-2x"></i>
+                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                    <p class="copyright text-muted">Copyright &copy; 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Contact Form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/clean-blog.min.js"></script>
+
+</body>
+
+</html>
