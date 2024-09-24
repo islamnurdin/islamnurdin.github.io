@@ -1,193 +1,516 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html lang="en" class="print:text-[13px] print:leading-tight">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Islam Nurdin</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+        <style>
+        * { font-family: "Roboto", sans-serif;font-weight: 300;}
+        h2, h3 { font-family: "Open Sans", sans-serif; }
+        table td { padding-right: 1em; color: #222; font-weight: 100;}
+        .hidden { display: none; }
+        html { scrollbar-gutter: stable;}
+        </style>
+    </head>
+    <body class="font-sans bg-white text-gray-900 py-8">
+        <div class="max-w-5xl mx-auto p-6">
+            <header class="mb-8 flex justify-between">
+                <h1 class="text-4xl cursor-pointer" onclick="showPage('overview')"> <span class="font-weight-400 mb-2">Islam</span> <span class="font-thin">Nurdin</span></h1>
+                <div class="flex items-center text-gray-600">
+                    <a href="mailto:hi@slv.io" class="mr-4">islamnurdin9@gmail.com</a>
+                    <a href="https://islamnurdin.github.io">I N</a>
+                </div>
+            </header>
 
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
-
-    <title>Islam's Blog</title>
-
-    <!-- Bootstrap Core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Theme CSS -->
-    <link href="css/clean-blog.min.css" rel="stylesheet">
-
-    <!-- Custom Fonts -->
-    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href='https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
-
-    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
-
-<body>
-
-    <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container-fluid">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span>
-                    Menu <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand" href="index.html">Islam Nurdin</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li>
-                        <a href="index.html">Home</a>
+            <nav class="mb-8">
+                <ul class="flex border rounded-lg overflow-hidden">
+                    <li class="flex-1">
+                        <button
+                            class="w-full py-2 bg-gray-100"
+                            onclick="showPage('overview')"
+                        >
+                            Overview
+                        </button>
                     </li>
-                    <li>
-                        <a href="about.html">About</a>
+                    <li class="flex-1">
+                        <button
+                            class="w-full py-2"
+                            onclick="showPage('experience')"
+                        >
+                            Experience
+                        </button>
                     </li>
-                    <li>
-                        <a href="contact.html">Contact</a>
+                    <li class="flex-1">
+                        <button
+                            class="w-full py-2"
+                            onclick="showPage('projects')"
+                        >
+                            Projects
+                        </button>
+                    </li>
+                    <li class="flex-1">
+                        <button
+                            class="w-full py-2"
+                            onclick="showPage('consulting')"
+                        >
+                            Essays
+                        </button>
                     </li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+            </nav>
+
+            <div id="content"></div>
         </div>
-        <!-- /.container -->
-    </nav>
 
-    <!-- Page Header -->
-    <!-- Set your background image for this header on the line below. -->
-    <header class="intro-header" style="background-image: url('img/home-bg.jpg')">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <div class="site-heading">
-                        <span class="subheading">A blog by Islam Nurdin</span>
-                        <hr class="small">
-                        <h1 style="color: yellow;">Welcome</h1>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </header>
+        <!-- Reusable content blocks -->
+        <div id="figma-content" class="hidden">
+            <h2 class="text-3xl font-bold mb-2"><a
+                href="https://te.com"
+                class="text-blue-800 hover:underline"
+                target="_blank"
+                rel="noopener noreferrer"
+            >TE Connectivity </a></h2>
+            <p class="text-sm text-gray-600 mb-4">
+                Jan 2024 - Jun 2024 | Seattle, WA
+            </p>
 
-    <!-- Main Content -->
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                
-                  <div class="post-preview">
-                     <a href="camp-blog.html">
-                         <h2 class="post-title">
-                            Cool things that I've learned last year.
-                         </h2>
-                    </a>
-                    <p class="post-meta"><a href="#">Islam Nurdin</a> on November 18, 2017</p>
-                    </div>
-                
-                
-                <div class="post-preview">
-                    <a href="al.html">
-                        <h2 class="post-title">
-                            Adaptive Leadership: How this affects our daily life? A blog about AL workshop.
-                        </h2>
-                    </a>
-                    <p class="post-meta"><a href="#">Islam Nurdin</a> on September 19, 2017</p>
-                </div>
-                
-                  <div class="post-preview">
-                    <a href="post.html">
-                       <h1>Man must explore, and this is exploration at its greatest</h1>
-                    </a>
-                    <p class="post-meta"><a href="#">Islam Nurdin</a> on August 24, 2017</p>
-                </div>
-                  
-                <div class="post-preview">
-                     <a href="blog-2.html">
-                       <h1>Summer camp at UCA</h1>
-                    </a>
-                    <p class="post-meta"><a href="#">Aisulu Maulen</a> on July 27, 2017</p>
-                </div>
+            <h3 class="text-xl font-semibold mt-4 mb-2">ML Research</h3>
+            <p class="mb-4">
+                As part of my university capstone project with TE Connectivity, I spearheaded machine learning application into their expander line process. 
+                Self-teaching myself machine learning through research, hands-on practice, and rigorous study, I applied my skills to real-world problems. 
+            </p>
 
-                <div class="post-preview">
-                     <a href="camp.html">
-                       <h1>Two weeks of the summer.</h1>
-                        <h2 class="subheading">Things I like from Summer Camp 2017</h2>
-                    </a>
-                    <p class="post-meta"><a href="#">Islam Nurdin</a> on July 20, 2017</p>
-                </div>
-                
-               <!--  <div class="post-preview">
-                     <a href="summer.html">
-                       <h1>Strangest moment of my life. Love in Summer Camp</h1>
-                    </a>
-                    <p class="post-meta"><a href="#">Islam Nurdin</a> on July 18, 2017</p>
-                </div> -->
+            <p class="mb-4">
+                Leveraging tools such as TensorFlow and PyTorch, I implemented complex algorithms including Convolutional Neural Networks (CNNs) and Recurrent Neural Networks (RNNs), specifically Long Short-Term Memory (LSTM) networks, to optimize the expander line process. 
+                These models resulted in a <b>~20% reduction in scrap material</b>, significantly decreasing the dependency on operator intuition and saving hundreds of engineering hours.
+            </p>
+
+            <p class="mb-4">
+                Throughout the capstone project with TE Connectivity, I took ownership of implementing key machine learning solutions that directly impacted the expander line process. 
+                Working closely with their engineers, I ensured our collaboration was seamless, combining my technical expertise with their operational knowledge to drive meaningful results. 
+                I proactively guided my team, facilitating problem-solving discussions and setting a clear direction for integrating machine learning into existing workflows.
+            </p>
+
+            <h3 class="text-xl font-semibold mt-4 mb-2">Model Performance Analytics</h3>
+            <p class="mb-4">
+                To further enhance operational efficiency, I developed a custom analytics dashboard using Python, Streamlit, and MySQL. 
+                The webpage provided real-time insights into machine parameters, integrating predictive machine learning models that anticipated key performance indicators. 
+                This reduced manual intervention, <b>streamlining workflows by ~30%.</b>
+            </p>
+            <p class="mb-4">
+                Throughout the project, I utilized my full stack knowledge—ranging from JavaScript for frontend components to Streamlit for deployment—to ensure a seamless integration of these AI-driven solutions. 
+                My ability to self-learn and independently apply machine learning to solve industry-specific problems significantly contributed to improving product quality and reducing operational costs.
+            </p>
+            <p class="mb-4">
+                By promoting a strong focus on quality and performance, I helped streamline operations, reduce material waste, and improve overall productivity. 
+                This collaborative effort not only showcased my technical contributions but also strengthened the relationship between our team and TE Connectivity, ensuring the successful delivery of innovative solutions.
+            </p>
+
+            <p class="mb-4 text-blue-600">
+                Highlights:
+            </p>
+            <div id="editor-performance-details" class="bullets">
+                <ul class="list-disc pl-5 space-y-2">
+                    <li>Designed and integrated machine learning models, <strong>reducing scrap material by ~20%</strong> and minimizing reliance on operator intuition, <strong>generating savings in engineering hours</strong> and enabling better product quality.</li>
+                    <li><strong>Enhanced operator workflows by ~30%</strong> through the creation of custom analytics webpage from scratch, integrating machine learning models to predict major parameters of the expander machine.</li>
+                    <li><strong>Stack: </strong> Python, MySQL, JavaScript, ML Algorithms (CNN, RNN, LSTM), TensorFlow, PyTorch, Streamlit, Linux</li>
+                    
+                </ul>
             </div>
         </div>
-    </div>
 
-    <hr>
+        <div id="links-content" class="hidden">
+            <h2 class="text-2xl font-bold mb-2">Links</h2>
+            <table>
+                <tbody>
+                    <tr><td>GitHub</td><td><a href="https://github.com/islamnurdin">islamnurdin</a></td></tr>
+                    <tr><td>LinkedIn</td><td><a href="https://www.linkedin.com/in/islamnurdin/">Islam Nurdin</a></td></tr>
+                    <tr><td>Twitter</td><td><a href="https://x.com/islamnurdin">@islamnurdin</a></td></tr>
+                    <tr><td>Essays</td><td><button
+                        onclick="showPage('consulting')"
+                        style="color: rgb(74, 71, 71);"
+                    >
+                        here
+                    </button></td></tr>
+                </tbody>
+            </table>
+        </div>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-                    <ul class="list-inline text-center">
+        <div id="awards-content" class="hidden">
+            <h2 class="text-2xl font-bold mb-2">Awards</h2>
+            <table>
+                <tbody>
+                    <tr><td>World Scholar's Cup 2017</td><td>Gold Medal</td></tr>
+                    <tr><td>World Scholar's Cup 2016</td><td>Silver Medal</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div id="mit-content" class="hidden">
+            <h2 class="text-2xl font-bold mb-2">University of Washington</h2>
+            <p class="text-sm text-gray-600 mb-2">2022-2024 | Seattle, WA</p>
+            <p class="mb-4">BS in Electrical & Computer Engineering</p>
+            <ul>
+                <li>Algorithms & Data Structures</li>
+                <li>Database Systems</li>
+                <li>Fundamentals of ML Optimization</li>
+                <li>ML for Sig Processing Applications</li>
+                <li>Probability and Stats for Engineers</li>
+                <li>Digital Circuits and Systems</li>
+                <li>Advanced Multivariable Calculus</li>
+            </ul>
+            <p class="mt-4"> Teaching staff for an ECE class at UW</p>
+        </div>
+        <div id="projects-content" class="hidden">
+            <div id="projects-labeltool" class="mb-8"></div>
+            <div id="projects-figma" class="mb-8"></div>
+            <div id="projects-husky" class="mb-8"></div>
+            <div id="projects-graphql" class="mb-8"></div>
+            <div id="projects-korean" class="mb-8"></div>
+        </div>
+
+        <div id="labeltool-content" class="hidden">
+            <h2 class="text-2xl font-bold mb-2">Theia Tech</h2>
+            <p class="mb-4">
+                Theia Technologies is an award-winning American optics design and manufacturing company known for quality and innovation. This was made during my internship and I worked on the Lens Selector and Calculator pages.  Below you can see a screenshot of my work. 
+            </p>
+            <img src="img/work-4.gif" class="my-2" width="600" height="600"/>
+            <ul class="list-disc pl-5 space-y-2">
+                <li>Over 650 active users</li>
+                <li>Enables customization when choosing lenses</li>
+                <li>Supports in selecting lenses using a lens calculator and a resolution simulator</li>
+                <li>Overall a highly efficient and user-friendly filter</li>
+            </ul>
+            <p class="mt-4">
+                <a href="https://www.theiatech.com/lenses/lens-selector/" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                    Live Demo
+                </a>
+            </p>
+        </div>
+
+        <div id="graphql-tools-content" class="hidden">
+            <h2 class="text-2xl font-bold mb-2">Data Laundry</h2>
+            <p class="mb-4">
+                A place to clean your data. An online tool designed for data cleaning, providing a user-friendly platform to enhance the quality and accuracy of your datasets. 
+                This tool allows users to preprocess, standardize, and refine their data, ensuring it is reliable and ready for analysis or integration into applications.
+            </p>
+            <ul class="list-disc pl-5 space-y-2">
+                <li>Upload your data in Excel or CSV format</li>
+                <li>Do cleanup operations</li>
+                <li>Use analytics tools (powered by AI)</li>
+                <li>Quick drag & drop functionality</li>
+            </ul>
+        </div>
+
+        <div id="figma-projects-content" class="hidden">
+            <h2 class="text-2xl font-bold mb-2">Carpool App</h2>
+            <p class="mb-4">
+                Developed and launched an iOS app from the ground up, managing all phases of the project as a freelance developer. The app is now discontinued.            
+            </p>
+            <ul class="list-disc pl-5 space-y-2">
+                <li>Lightning-fast scrolling on the home feed screen with an impressive 60 FPS performance</li>
+                <li>Improved trip search efficiency</li>
+                <li>Seamless and smooth user interface</li>
+            </ul>
+
+            <img src="img/work-6.jpg" class="my-2" width="600" height="600"/>
+            
+        </div>
+
+        <div id="husky-tools-content" class="hidden">
+            <h2 class="text-2xl font-bold mb-2">Husky Map</h2>
+            <p class="mb-4">
+                An educational web app for mapping the world, searching for places, and navigating around Seattle.
+                The app is designed to highlight 3 components: Autocomplete (Search), Priority Queues, and Seam Finding. See the Releases for instructions about each project component.
+            </p>
+            <p class="mt-4">
+                <a href="https://github.com/islamnurdin/Husky-Maps" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                    Github
+                </a>
+            </p>
+            <img src="img/work-7.jpg" class="my-2" width="600" height="600"/>
+
+           
+        </div>
+        <div id="korean-projects-content" class="hidden">
+            <h2 class="text-2xl font-bold mb-2">AI related side projects</h2>
+            <ul class="list-disc pl-5 space-y-2">
+                <li><a href="" class="text-blue-600 hover:underline">AI Real Estate "Agent"</a>: fully trained LLM model that can answer your housing / real estate questions. <br>Received 90 / 100 on the national real estate practice exam.</li>
+                <li><a href="" class="text-blue-600 hover:underline">Tinder Opener Generator</a>: a one-line generator for tinder apps.</li>
+            </ul>
+        </div>
+
+        <div id="internships-content" class="hidden">
+            <h3 class="text-2xl font-bold mb-2">Internships</h3>
+            <div class="mb-4">
+                <p class="font-semibold">
+                    Stealth Startup
+                    <span class="text-sm text-gray-600 font-normal">Summer 2023</span>
+                    <span
+                        class="text-gray-400 cursor-pointer"
+                        onclick="toggleDetails('facebook-details')"
+                    >
+                        [+]
+                    </span>
+                </p>
+                <p class="mb-4">
+                    Realm AI was a startup that would revolutionize the home buying process by utilizing open-source Large Language Models (LLMs) and creating a single place resource for new home buyers. I conducted in-depth research and integrated advanced LLMs to elevate the startup's technological framework.                </p>
+                <div id="facebook-details" class="pl-5 mt-2 hidden">
+                    <p> <strong> R&D Engineering Intern </strong></p>
+                    <ul class="list-disc pl-5">
                         <li>
-                            <a href="https://twitter.com/islamnurdin">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
+                            Fine-tuned the model that achieved a 90% success rate and successfully passed the real estate exam which qualified to get the real estate agent license in over 40 states.
                         </li>
                         <li>
-                            <a href="https://facebook.com">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://github.com/islamnurdin">
-                                <span class="fa-stack fa-lg">
-                                    <i class="fa fa-circle fa-stack-2x"></i>
-                                    <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-                                </span>
-                            </a>
+                            Implemented advanced LLMs, driving a ~20% increase in predictive analytics accuracy and a ~15% performance boost, significantly enhancing user satisfaction and achieving key business goals.
                         </li>
                     </ul>
-                    <p class="copyright text-muted">Copyright &copy; 2017</p>
+                </div>
+            </div>
+            <div class="mb-4">
+                <p class="font-semibold">
+                    Webkey <span class="text-sm text-gray-600 font-normal">Spring, Summer 2022</span>
+                    <span
+                        class="text-gray-400 cursor-pointer"
+                        onclick="toggleDetails('brave-details')"
+                    >
+                        [+]
+                    </span>
+                </p>
+                <p class="mb-4">
+                    Webkey is a full-service web design firm specializing in dynamic, database-driven websites, collaborative project management tools, and online publishing. I worked on multiple projects where I did full-stack web development.
+                </p>
+                <div id="brave-details" class="pl-5 mt-2 hidden">
+                    
+                    <p> <strong> Software Engineering Intern </strong></p>
+                    <ul class="list-disc pl-5">
+                        <li>
+                            Developed and maintained a complex web application using Python/Django for the backend and JavaScript/React for the frontend, resulting in a ~30% increase in user engagement and a 20% reduction in load times.
+                        </li>
+                        <li>
+                            Implemented RESTful APIs and optimized database queries, resulting in a 25% improvement in system performance and supporting over 10,000 concurrent users.
+                        </li>
+                        <li>
+                            Implemented multiple custom-made plugins using the Django framework to automate 100+ features of a large CMS application, which boosted efficiency and reduced operational costs.
+                        </li>
+                        <li>
+                            Stack: Python/Django, JavaScript, PostgreSQL, HTML, CSS, React/Typescript, Linux,                        
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="mb-4">
+                <p class="font-semibold">
+                    Carpool
+                    <span class="text-sm text-gray-600 font-normal">Summer 2019</span>
+                    <span
+                        class="text-gray-400 cursor-pointer"
+                        onclick="toggleDetails('ncsoft-details')"
+                    >
+                        [+]
+                    </span>
+                </p>
+                <p class="mb-4">
+                    At Carpool, I built and launched an iOS app from scratch, handling all aspects of the project as a freelance developer.                </p>
+                <div id="ncsoft-details" class="pl-5 mt-2 hidden">
+                    <p><strong> Software Engineering Intern </strong></p>
+                    <ul class="list-disc pl-5">
+                        <li>
+                            Developed and launched a scalable iOS carpool app, improving trip search efficiency by 40%, which reduced user search time and increased user engagement by 30%, leading to higher app retention and satisfaction.
+                        </li>
+                        <li>
+                            Improved scrolling performance of the home feed screen reaching 60 FPS which enabled the customers to enjoy a smooth user experience.
+                        </li>
+                        <li>
+                            Stack: Swift, SwiftUI, RxSwift, Xcode, Firebase, Realm
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </footer>
+        </div>
 
-    <!-- jQuery -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+        <div id="overview-content" class="hidden">
+            <div class="flex flex-col md:flex-row">
+                <div class="w-full md:w-2/3 order-1 md:order-2">
+                    <div id="overview-figma"></div>
+                </div>
+                <div class="w-full md:w-1/3 pr-0 md:pr-4 mt-8 md:mt-0 order-2 md:order-1">
+                    <div id="overview-mit" class="mb-8"></div>
+                    <div id="overview-links" class="mb-8"></div>
+                    <div id="overview-awards" class="mb-8"></div>
+                </div>
+            </div>
+        </div>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+        <div id="experience-content" class="hidden">
 
-    <!-- Contact Form JavaScript -->
-    <script src="js/jqBootstrapValidation.js"></script>
-    <script src="js/contact_me.js"></script>
+            <div class="mb-8" id="experience-figma"></div>
 
-    <!-- Theme JavaScript -->
-    <script src="js/clean-blog.min.js"></script>
+            <div class="mb-8" id="experience-internships"></div>
+        </div>
 
-</body>
+        <div id="consulting-content" class="hidden">
+            <h2 class="text-2xl font-bold mb-4"> I have a collection of essays from my previous blog that I plan to migrate here.</h2>
 
+        <!-- <div id="consulting-content" class="hidden">
+            <h2 class="text-2xl font-bold mb-4">Consulting Services</h2>
+            <div class="space-y-8">
+                <div>
+                    <p class="mb-4">I provide high-impact software engineering consulting services for companies facing complex technical challenges. My areas of expertise include:</p>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>Full-stack web application development</li>
+                        <li>Performance optimization and scalability solutions</li>
+                        <li>Real-time systems architecture</li>
+                        <li>System design and architecture</li>
+                        <li>Mentorship for technical leads and individual contributors in your organization</li>
+                    </ul>
+                </div>
+
+                <p class="mb-4">With over 8 years of experience building scalable systems at companies like Figma, I offer rapid, effective solutions to challenging engineering problems.</p>
+
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Why Work With Me?</h3>
+                    <ul class="space-y-4">
+                        <li><span class="font-semibold">Proven Track Record:</span> I've led critical projects that have impacted millions of users, including Figma's LiveGraph real-time data system and performance testing framework. <a href="#" onclick="showPage('experience'); return false;" class="text-blue-600 hover:underline">See my experience for more details</a>.</li>
+                        <li><span class="font-semibold">Full-Stack Mastery:</span> From low-level backend optimizations to high-performance frontend implementations, I bring deep knowledge across the entire software stack.</li>
+                        <li><span class="font-semibold">Rapid Problem Solving:</span> I excel at quickly grasping complex systems and delivering impactful solutions under tight deadlines.</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <h3 class="text-xl font-semibold mb-4">Past Contracts</h3>
+                    <div class="space-y-4">
+                        <div>
+                            <h4 class="text-lg font-medium mb-2">Optimizing Real-Time Notifications</h4>
+                            <p>A client hired me to optimize their real-time in-app notifications pipeline. I developed a custom, highly efficient solution based on MongoDB capped tables that seamlessly integrated with their existing MongoDB infrastructure. This tailored approach significantly improved their notification system's performance and scalability.</p>
+                        </div>
+                        <div>
+                            <h4 class="text-lg font-medium mb-2">Scaling a Redis-Based Serverless Platform</h4>
+                            <p>A client engaged me to design a solution for scaling their Redis-based scheduling system for executing customer functions. I created a comprehensive design document that addressed complex requirements including queue fault-tolerance and results caching, low latency, and seamless evolution of the existing system. Working closely with their engineering team, I iterated on the design and developed load tests to validate the proposed options paying attention to operational complexity and costs in addition to room for future growth.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h3 class="text-xl font-semibold mb-4">What I Offer</h3>
+                    <ul class="list-disc pl-5 space-y-2">
+                        <li>1-2 month engagement</li>
+                        <li>Full-time dedication to your project</li>
+                        <li>Compensation structure is discussed at project discussion</li>
+                    </ul>
+                </div>
+
+                <div class="mb-4">
+                    <h3 class="text-xl font-semibold mb-2">Contact</h3>
+                    <p>For inquiries about consulting services, please reach out via email:</p>
+                    <p class="mt-2">
+                        <a href="mailto:consulting@slv.io" class="text-blue-600 hover:underline">consulting@slv.io</a>
+                    </p>
+                </div>
+            </div>
+        </div> -->
+
+        <script>
+            function showPage(pageName) {
+                // Update URL hash
+                if (pageName === 'overview') {
+                    history.pushState(null, '', '#');
+                } else {
+                    history.pushState(null, '', `#${pageName}`);
+                }
+                // Scroll to the top of the page
+                window.scrollTo(0, 0);
+                const content = document.getElementById("content");
+                const pageContent = document.getElementById(
+                    `${pageName}-content`,
+                );
+                content.innerHTML = pageContent.innerHTML;
+
+                if (pageName === "overview") {
+                    document.getElementById("overview-figma").innerHTML =
+                        document.getElementById("figma-content").innerHTML;
+                    document.getElementById("overview-mit").innerHTML =
+                        document.getElementById("mit-content").innerHTML;
+                    document.getElementById("overview-awards").innerHTML =
+                        document.getElementById("awards-content").innerHTML;
+                    document.getElementById("overview-links").innerHTML =
+                        document.getElementById("links-content").innerHTML;
+
+                    const experienceButton = () => {
+                      const button = document.createElement("button");
+                      button.textContent = "see more...";
+                      button.className = "text-blue-600 hover:underline mt-4";
+                      button.onclick = () => showPage('experience');
+                      return button;
+                    }
+
+                    document.getElementById("editor-performance-details").appendChild(experienceButton());
+                    document.getElementById("livegraph-details").appendChild(experienceButton());
+
+                    // Remove all but the first 2 bullet points from lists with class "bullets"
+                    document.querySelectorAll('#overview-figma .bullets ul').forEach(list => {
+                        const items = list.querySelectorAll('li');
+                        for (let i = 2; i < items.length; i++) {
+                            items[i].remove();
+                        }
+                    });
+                } else if (pageName === "experience") {
+                  document.getElementById("experience-figma").innerHTML =
+                      document.getElementById("figma-content").innerHTML;
+                  document.getElementById(
+                      "experience-internships",
+                  ).innerHTML = document.getElementById(
+                      "internships-content",
+                  ).innerHTML;
+
+                  // Unhide buttons with class "hidden"
+                  document.querySelectorAll('#experience-figma button.hidden').forEach(button => {
+                      button.classList.remove('hidden');
+                  });
+                } else if (pageName === "projects") {
+                  document.getElementById("projects-labeltool").innerHTML =
+                      document.getElementById("labeltool-content").innerHTML;
+                  document.getElementById("projects-figma").innerHTML =
+                      document.getElementById("figma-projects-content").innerHTML;
+                  document.getElementById("projects-graphql").innerHTML =
+                      document.getElementById("graphql-tools-content").innerHTML;
+                  document.getElementById("projects-husky").innerHTML =
+                      document.getElementById("husky-tools-content").innerHTML;
+                  document.getElementById("projects-korean").innerHTML =
+                      document.getElementById("korean-projects-content").innerHTML;
+                }
+
+                // Update active nav button
+                document.querySelectorAll("nav button").forEach((btn) => {
+                    btn.classList.remove("bg-gray-100");
+                });
+                document
+                    .querySelector(`button[onclick="showPage('${pageName}')"]`)
+                    .classList.add("bg-gray-100");
+
+                // Force a re-paint to ensure Tailwind classes are applied
+                document.body.classList.remove("font-sans");
+                void document.body.offsetWidth;
+                document.body.classList.add("font-sans");
+            }
+
+            function toggleDetails(id) {
+                const details = document.getElementById(id);
+                details.classList.toggle("hidden");
+            }
+
+            // Show overview page by default
+            const hash = window.location.hash.slice(1);
+            if (hash && ['overview', 'experience', 'projects', 'consulting'].includes(hash)) {
+                showPage(hash);
+            } else {
+                showPage("overview");
+            }
+        </script>
+    </body>
 </html>
