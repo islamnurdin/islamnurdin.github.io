@@ -166,6 +166,7 @@
         </div>
         <div id="projects-content" class="hidden">
             <div id="projects-labeltool" class="mb-8"></div>
+            <div id="projects-theia" class="mb-8"></div>
             <div id="projects-figma" class="mb-8"></div>
             <div id="projects-husky" class="mb-8"></div>
             <div id="projects-graphql" class="mb-8"></div>
@@ -174,11 +175,13 @@
 
         <div id="labeltool-content" class="hidden">
             <h2 class="text-2xl font-bold mb-2">Artifex</h2>
+            <p class="mb-4">Artifex is an AI aided engineering tool that will help you save time and materials when manufacturing parts. Official announcement coming soon. </p>
             <a href="artifex.html" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
-            AI </a>
+                Learn more.
+             </a>
         </div>
 
-        <div id="labeltool-content" class="hidden">
+        <div id="theia-content" class="hidden">
             <h2 class="text-2xl font-bold mb-2">Theia Tech</h2>
             <p class="mb-4">
                 Theia Technologies is an award-winning American optics design and manufacturing company known for quality and innovation. This was made during my internship and I worked on the Lens Selector and Calculator pages.  Below you can see a screenshot of my work. 
@@ -365,64 +368,6 @@
         <div id="consulting-content" class="hidden">
             <h2 class="text-2xl font-bold mb-4"> I have a collection of essays from my previous blog that I plan to migrate here.</h2>
 
-        <!-- <div id="consulting-content" class="hidden">
-            <h2 class="text-2xl font-bold mb-4">Consulting Services</h2>
-            <div class="space-y-8">
-                <div>
-                    <p class="mb-4">I provide high-impact software engineering consulting services for companies facing complex technical challenges. My areas of expertise include:</p>
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li>Full-stack web application development</li>
-                        <li>Performance optimization and scalability solutions</li>
-                        <li>Real-time systems architecture</li>
-                        <li>System design and architecture</li>
-                        <li>Mentorship for technical leads and individual contributors in your organization</li>
-                    </ul>
-                </div>
-
-                <p class="mb-4">With over 8 years of experience building scalable systems at companies like Figma, I offer rapid, effective solutions to challenging engineering problems.</p>
-
-                <div>
-                    <h3 class="text-xl font-semibold mb-4">Why Work With Me?</h3>
-                    <ul class="space-y-4">
-                        <li><span class="font-semibold">Proven Track Record:</span> I've led critical projects that have impacted millions of users, including Figma's LiveGraph real-time data system and performance testing framework. <a href="#" onclick="showPage('experience'); return false;" class="text-blue-600 hover:underline">See my experience for more details</a>.</li>
-                        <li><span class="font-semibold">Full-Stack Mastery:</span> From low-level backend optimizations to high-performance frontend implementations, I bring deep knowledge across the entire software stack.</li>
-                        <li><span class="font-semibold">Rapid Problem Solving:</span> I excel at quickly grasping complex systems and delivering impactful solutions under tight deadlines.</li>
-                    </ul>
-                </div>
-
-                <div class="mb-4">
-                    <h3 class="text-xl font-semibold mb-4">Past Contracts</h3>
-                    <div class="space-y-4">
-                        <div>
-                            <h4 class="text-lg font-medium mb-2">Optimizing Real-Time Notifications</h4>
-                            <p>A client hired me to optimize their real-time in-app notifications pipeline. I developed a custom, highly efficient solution based on MongoDB capped tables that seamlessly integrated with their existing MongoDB infrastructure. This tailored approach significantly improved their notification system's performance and scalability.</p>
-                        </div>
-                        <div>
-                            <h4 class="text-lg font-medium mb-2">Scaling a Redis-Based Serverless Platform</h4>
-                            <p>A client engaged me to design a solution for scaling their Redis-based scheduling system for executing customer functions. I created a comprehensive design document that addressed complex requirements including queue fault-tolerance and results caching, low latency, and seamless evolution of the existing system. Working closely with their engineering team, I iterated on the design and developed load tests to validate the proposed options paying attention to operational complexity and costs in addition to room for future growth.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="mb-4">
-                    <h3 class="text-xl font-semibold mb-4">What I Offer</h3>
-                    <ul class="list-disc pl-5 space-y-2">
-                        <li>1-2 month engagement</li>
-                        <li>Full-time dedication to your project</li>
-                        <li>Compensation structure is discussed at project discussion</li>
-                    </ul>
-                </div>
-
-                <div class="mb-4">
-                    <h3 class="text-xl font-semibold mb-2">Contact</h3>
-                    <p>For inquiries about consulting services, please reach out via email:</p>
-                    <p class="mt-2">
-                        <a href="mailto:consulting@slv.io" class="text-blue-600 hover:underline">consulting@slv.io</a>
-                    </p>
-                </div>
-            </div>
-        </div> -->
-
         <script>
             function showPage(pageName) {
                 // Update URL hash
@@ -483,6 +428,8 @@
                 } else if (pageName === "projects") {
                   document.getElementById("projects-labeltool").innerHTML =
                       document.getElementById("labeltool-content").innerHTML;
+                  document.getElementById("projects-theia").innerHTML =
+                      document.getElementById("theia-content").innerHTML;
                   document.getElementById("projects-figma").innerHTML =
                       document.getElementById("figma-projects-content").innerHTML;
                   document.getElementById("projects-graphql").innerHTML =
