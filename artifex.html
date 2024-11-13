@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Artifex</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <div class="logo-text">Artifex</div>
+    <nav class="nav">
+      <a href="#features">Features</a>
+      <a href="#industries">Industries</a>
+      <a href="#about">About</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>AI-Aided Engineering Assistant</h1>
+    <p>Artifex offers intelligent tools for FEA/FEM analysis, copilot assistance, and comprehensive engineering support.</p>
+    <div class="hero-buttons">
+      <a href="#features" class="btn">Explore Features</a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="features-nav">
+      <button onclick="showFeature('fea')" id="nav-fea" class="active">FEA/FEM Analysis</button>
+      <button onclick="showFeature('copilot')" id="nav-copilot">Copilot Assistance</button>
+      <button onclick="showFeature('insights')" id="nav-insights">Engineering Insights</button>
+    </div>
+    <div class="feature-details" id="fea">
+      <h2>FEA/FEM Analysis</h2>
+      <p>Leverage finite element analysis tools to optimize designs for performance and durability.</p>
+    </div>
+    <div class="feature-details" id="copilot">
+      <h2>Copilot Assistance</h2>
+      <p>AI-powered copilot guides you through complex engineering tasks in real-time.</p>
+    </div>
+    <div class="feature-details" id="insights">
+      <h2>Engineering Insights</h2>
+      <p>Get intelligent insights to streamline and enhance engineering processes across industries.</p>
+    </div>
+  </section>
+
+  <!-- Industries Section -->
+  <section id="industries" class="industries">
+    <h2>Industries We Serve</h2>
+    <div class="slider">
+      <div class="slide">
+        <img src="aero.jpg" alt="Aerospace Industry">
+        <p>Aerospace</p>
+      </div>
+      <div class="slide">
+        <img src="automotive.jpg" alt="Automotive Industry">
+        <p>Automotive</p>
+      </div>
+      <div class="slide">
+        <img src="construction.jpg" alt="Construction Industry">
+        <p>Construction</p>
+      </div>
+      <div class="slide">
+        <img src="manufacturing.jpg" alt="Manufacturing Industry">
+        <p>Manufacturing</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Artifex</h2>
+    <p>Artifex redefines engineering assistance with AI-powered tools. Our platform serves industries including aerospace, automotive, construction, and manufacturing, delivering real-time analysis and intelligent support.</p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2024 Artifex. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function showFeature(id) {
+      const features = document.querySelectorAll('.feature-details');
+      const navButtons = document.querySelectorAll('.features-nav button');
+      
+      features.forEach((feature) => feature.style.display = 'none');
+      navButtons.forEach((button) => button.classList.remove('active'));
+      
+      document.getElementById(id).style.display = 'block';
+      document.getElementById('nav-' + id).classList.add('active');
+    }
+    
+    // Show the first feature by default
+    document.addEventListener("DOMContentLoaded", () => showFeature('fea'));
+  </script>
+</body>
+</html>
+

@@ -1,0 +1,176 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+body {
+  background-color: #000;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #000;
+}
+
+.logo-text {
+  font-size: 1.5em;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav a {
+  color: #fff;
+  margin-left: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.hero {
+  text-align: center;
+  padding: 100px 20px;
+  background: linear-gradient(135deg, #000, #333);
+}
+
+.hero h1 {
+  font-size: 2.5em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #ccc;
+  margin-bottom: 40px;
+}
+
+.hero-buttons .btn {
+  padding: 10px 20px;
+  background-color: #fff;
+  color: #000;
+  border-radius: 5px;
+  text-decoration: none;
+}
+
+/* Features Section */
+.features {
+  padding: 60px 50px;
+  text-align: center;
+  background-color: #111;
+}
+
+.features-nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.features-nav button {
+  background: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.features-nav button.active {
+  background: #555;
+  color: #ffd700;
+}
+
+.features-nav button:hover {
+  background: #444;
+}
+
+.feature-details {
+  display: none;
+  padding: 40px;
+  background: linear-gradient(135deg, #222, #333);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.6);
+  color: #fff;
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.feature-details h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.feature-details p {
+  color: #ccc;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+/* Other Sections (Industries, About, Footer) */
+.industries {
+  padding: 80px 50px;
+  text-align: center;
+  background-color: #222;
+}
+
+.industries h2 {
+  font-size: 2em;
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.slide {
+  min-width: 200px;
+  text-align: center;
+  background: #333;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.slide p {
+  color: #aaa;
+  margin-top: 10px;
+}
+
+.about {
+  padding: 80px 50px;
+  background-color: #111;
+  text-align: center;
+}
+
+.about h2 {
+  color: #fff;
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #000;
+  color: #777;
+}
+
