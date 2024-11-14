@@ -11,6 +11,11 @@ body {
   color: #fff;
 }
 
+h1 {
+  font-size: 2.5em;
+  color: #fff;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -119,7 +124,7 @@ body {
 
 /* Other Sections (Industries, About, Footer) */
 .industries {
-  padding: 80px 50px;
+  padding: 10px 50px;
   text-align: center;
   background-color: #222;
 }
@@ -174,3 +179,123 @@ body {
   color: #777;
 }
 
+h2 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 1.5em;
+  color: #ffd700;
+}
+
+.manufacturing-comparison {
+  padding: 40px 0;
+  text-align: center;
+  width: 100%;
+  background-color: #222;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.process-row {
+  width: 90%;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.process-row h3 {
+  font-size: 1.3em;
+  color: #ddd;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.time-label {
+  text-align: center;
+  font-size: 1.1em;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.long-time {
+  color: #ff6347;
+  background-color: #333;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.short-time {
+  color: #32cd32;
+  background-color: #333;
+  padding: 3px 8px;
+  border-radius: 5px;
+}
+
+.process-steps {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+  margin-bottom: 10px; /* Add spacing between rows */
+  overflow-x: auto;
+}
+
+.step {
+  padding: 15px 15px;
+  background-color: #333;
+  border-radius: 8px;
+  font-size: 1em;
+  color: #ddd;
+  text-align: center;
+  min-width: 200px; /* Ensures steps are wide enough for longer text */
+  white-space: normal;
+}
+
+.highlight {
+  background-color: #444;
+  color: #ffd700;
+  word-wrap: break-word;
+}
+
+.artifex-role {
+  font-size: 0.8em;
+  color: #fff;
+  display: block;
+  margin-top: 5px;
+  font-style: italic;
+}
+
+.arrow {
+  font-size: 1.5em;
+  color: #666;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.time-saved-note {
+  text-align: center;
+  font-size: 1em;
+  color: #ffd700;
+  font-weight: bold;
+  margin-top: 15px;
+}
+
+.traditional-process {
+  background-color: #292929;
+}
+
+.ai-process {
+  background-color: #1e1e1e;
+}
+
+/* Label for iteration */
+.iteration .repeat-label {
+  font-size: 0.8em;
+  color: #aaa;
+  text-align: center;
+  margin-top: 5px;
+  display: block;
+  font-style: italic;
+}
