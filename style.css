@@ -68,7 +68,7 @@ h1 {
 .industries {
   padding: 10px 50px;
   text-align: center;
-  background-color: #222;
+  background: linear-gradient(54deg, #000, #333)
 }
 
 .industries h2 {
@@ -132,9 +132,7 @@ h2 {
   padding: 40px 0;
   text-align: center;
   width: 100%;
-  background-color: #222;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  background: linear-gradient(113deg, #000, #333)
 }
 
 .process-row {
@@ -242,10 +240,10 @@ h2 {
   font-style: italic;
 }
 
-/* Combined Features and Demo Section */
+
 .features-demo {
   padding: 40px 20px;
-  background-color: #111; /* Dark background */
+  background: linear-gradient(63deg, #000, #333);
   color: #fff; /* White text */
 }
 
