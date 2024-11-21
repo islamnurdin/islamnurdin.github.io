@@ -22,35 +22,51 @@
   <!-- Hero Section -->
   <section class="hero">
     <h1>Artifex: AI-Aided Engineering Assistant</h1>
-    <p>Artifex offers intelligent tools for FEA/FEM analysis, open source copilot assistance, and comprehensive engineering support.</p>
+    <p>Artifex offers intelligent tools for FEM analysis, open source copilot assistance, and comprehensive engineering support.</p>
     <p>Stay tuned for beta version to be released in December!</p>
     <div class="hero-buttons">
       <a href="#features" class="btn">Explore Features</a>
     </div>
   </section>
 
-  <!-- Features Section -->
-  <section id="features" class="features">
-   <div class="features-nav">
-      <button onclick="showFeature('fea')" id="nav-fea" class="active">FEA/FEM Analysis</button>
-      <button onclick="showFeature('copilot')" id="nav-copilot">Copilot Assistance</button>
-      <button onclick="showFeature('insights')" id="nav-insights">Engineering Insights</button>
-    </div>
-    <div class="feature-details" id="fea">
-      <h2>FEA/FEM Analysis</h2>
-      <p>Leverage finite element analysis tools to optimize designs for performance and durability.</p>
-    </div>
-    <div class="feature-details" id="copilot">
-      <h2>Copilot Assistance</h2>
-      <p> Our open source AI-powered copilot guides you through complex engineering tasks in real-time.</p>
-    </div>
-    <div class="feature-details" id="insights">
-      <h2>Engineering Insights</h2>
-      <p>Get intelligent insights to streamline and enhance engineering processes across industries.</p>
+<section id="features-demo" class="features-demo">
+    <div class="container">
+      <!-- Features Navigation and Details -->
+      <div class="features-section">
+        <h2>Features</h2>
+        <div class="features-nav">
+          <button onclick="showFeature('fea')" id="nav-fea">Finite Element Analysis</button>
+          <button onclick="showFeature('copilot')" id="nav-copilot">Copilot Assistance</button>
+          <button onclick="showFeature('insights')" id="nav-insights">Engineering Insights</button>
+        </div>
+        <div class="feature-details" id="fea">
+	  <h3>Finite Element Analysis</h3> <br>
+          <p>Leverage finite element analysis tools to optimize designs for performance and durability.</p>
+        </div>
+        <div class="feature-details hidden" id="copilot">
+		<h3>Copilot Assistance</h3> <br>
+          <p>Our open-source AI-powered copilot guides you through complex engineering tasks in real-time.</p>
+        </div>
+        <div class="feature-details hidden" id="insights">
+		<h3>Engineering Insights</h3><br>
+          <p>Get intelligent insights to streamline and enhance engineering processes across industries.</p>
+        </div>
+      </div>
+
+      <!-- Demo GIF Section -->
+      <div class="demo-section">
+        <h2>What is Artifex?</h2>
+        <p>
+          Artifex is an open-source AI-powered engineering assistant designed to revolutionize the manufacturing process. It streamlines Finite Element Analysis (FEA), Computer-Aided Design (CAD), and prototyping by automating design iterations, optimizing workflows, and reducing manual overhead.
+        </p>
+        <div class="demo-gif">
+          <img src="demo.gif" alt="Artifex Demo" />
+        </div>
+      </div>
     </div>
   </section>
 
-<section class="manufacturing-comparison">
+  <section id="manufacturing-comparison" class="manufacturing-comparison">
    <h1>Artifex's Impact in a Real-World Use Case:</h1>
    <h2>Evolving the Automotive Parts Design Paradigm</h2>
     
@@ -141,19 +157,34 @@
   </footer>
 
   <script>
-    function showFeature(id) {
-      const features = document.querySelectorAll('.feature-details');
-      const navButtons = document.querySelectorAll('.features-nav button');
-      
-      features.forEach((feature) => feature.style.display = 'none');
-      navButtons.forEach((button) => button.classList.remove('active'));
-      
-      document.getElementById(id).style.display = 'block';
-      document.getElementById('nav-' + id).classList.add('active');
-    }
-    
-    // Show the first feature by default
-    document.addEventListener("DOMContentLoaded", () => showFeature('fea'));
+	// Function to show a specific feature
+function showFeature(featureId) {
+  // Hide all feature details
+  const allFeatures = document.querySelectorAll('.feature-details');
+  allFeatures.forEach((feature) => {
+    feature.classList.add('hidden');
+    feature.classList.remove('active');
+  });
+
+  // Remove active state from all buttons
+  const allButtons = document.querySelectorAll('.features-nav button');
+  allButtons.forEach((button) => button.classList.remove('active'));
+
+  // Show the selected feature
+  const activeFeature = document.getElementById(featureId);
+  activeFeature.classList.remove('hidden');
+  activeFeature.classList.add('active');
+
+  // Set the active button
+  document.querySelector(`#nav-${featureId}`).classList.add('active');
+}
+
+// Ensure the default feature is shown when the page loads
+document.addEventListener('DOMContentLoaded', () => {
+  const defaultFeatureId = 'fea'; // Default feature ID
+  showFeature(defaultFeatureId);
+});
+
   </script>
 </body>
 </html>
