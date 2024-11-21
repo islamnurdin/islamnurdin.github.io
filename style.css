@@ -132,7 +132,7 @@ h2 {
   padding: 40px 0;
   text-align: center;
   width: 100%;
-  background: linear-gradient(113deg, #000, #333)
+  background: linear-gradient(119deg, #000, #333)
 }
 
 .process-row {
@@ -243,7 +243,7 @@ h2 {
 
 .features-demo {
   padding: 40px 20px;
-  background: linear-gradient(63deg, #000, #333);
+  background: linear-gradient(58deg, #000, #333);
   color: #fff; /* White text */
 }
 
