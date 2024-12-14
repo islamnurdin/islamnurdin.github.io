@@ -179,7 +179,7 @@
             <p class="mb-4">
                 This project, led by <a href="https://dxarts.washington.edu/people/nicolas-kisic-aguirre" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">Nicolás Kisic Aguirre</a>, explores the idea of robots as creative partners instead of just tools. 
                 It uses advanced tech to make robots more independent, interactive, and capable of working with humans in new and artistic ways. 
-                Checkout <a href="#consulting-content" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer"> my essay</a> for more details.</p>
+                Checkout <a href="#consulting" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer"> my essay</a> for more.</p>
                 <img src="img/dr.jpeg" class="my-2" width="500" height="500"/>
                 <ul class="list-disc pl-5 space-y-2">
                     <li><strong>Autonomous Navigation:</strong> Robots can independently move through spaces without manual control.</li>
@@ -386,8 +386,65 @@
         </div>
 
         <div id="consulting-content" class="hidden">
-            <h2 class="text-2xl font-bold mb-4"> I have a collection of essays from my previous blog that I plan to migrate here.</h2>
-</div>
+            <!-- Blog post list -->
+            <div class="grid gap-6 mb-8">
+                <article class="cursor-pointer" onclick="showBlogPost('disobedient-robots')">
+                    <h3 class="text-xl font-semibold hover:text-blue-600">Disobedient Robots</h3>
+                    <p class="text-gray-600 text-sm">December 10, 2024 • 2 min read</p>
+                    <p class="text-gray-700 mt-2">Exploring the fascinating world of autonomous robots and their potential as creative partners rather than mere tools.</p>
+                </article>
+            </div>
+
+            <div id="blog-disobedient-robots" class="hidden">
+                <button onclick="showBlogList()" class="mb-6 text-blue-600 hover:underline">← Back to all essays</button>
+                <h2 class="text-3xl font-bold mb-4">Disobedient Robots</h2>
+                
+                <div class="prose max-w-none">
+                    <p class="mb-4">
+                        Between May and November, I had the unique privilege of being part of the Disobedient Robots project, led by <a href="https://nka.radio/nicolas-kisic-aguirre" class="text-blue-600 hover:underline">Nicolás Kisic Aguirre</a> at DXARTS at the University of Washington. What started as a radical idea—a robot that doesn't always listen—became a playground for art and problem-solving. This is a bit of that journey.
+                        <h3 class="text-xl font-semibold mt-6 mb-3">A New Lens on Robotics</h3>
+                        <p class="mb-4">The project challenged how we see robots. 
+                        Instead of tools following commands, could they act as collaborators? Inspired by <a href="https://jeudepaume.org/en/evenement/technological-disobedience-ernesto-oroza/#:~:text=By%20studying%20how%20Cubans%20invent,these%20capitalistic%20products%20supposedly%20embody." class="text-blue-600 hover:underline">Ernesto Oroza's idea of "technological disobedience,"</a> we asked ourselves: What happens when robots are given a sense of agency? This wasn't just about building robots—it was about reshaping their purpose.
+    
+                        Our starting point was humble. The robots were controlled manually using RC radio transmitters. 
+                        They moved, sure, but the vision was so much bigger: to make them autonomous and adaptable.
+                        </p>
+                        
+                        <h3 class="text-xl font-semibold mt-6 mb-3">Challenges and Solutions</h3>
+
+                        <h4 class="text-lg font-medium mt-4 mb-2">Switching to Autonomous Control</h4>
+                        <p class="mb-4">At first, the robots were controlled manually with RC transmissions. Our main task was to make them fully autonomous. We did this by using ROS2 for robot control and adding sensors like LiDAR and depth cameras. These tools helped the robots map their surroundings and avoid obstacles.</p>
+
+                        <h4 class="text-lg font-medium mt-4 mb-2">Building Obstacle Avoidance</h4>
+                        <p class="mb-4">Creating an obstacle avoidance system was key for autonomy. We used real-time sensing to program the robots to detect and move around barriers. This required careful sensor calibration and algorithm adjustments for changing conditions.</p>
+
+                        <h4 class="text-lg font-medium mt-4 mb-2">Combining Art and Technology</h4>
+                        <p class="mb-4">The project also focused on artistic expression. We worked with Nicolás to ensure the robots were part of a story about autonomy and teamwork. This mix of art and engineering showed me that robots can be more than just machines; they can be part of a creative process.</p>
+
+                        <p class="mb-4">Working on the Disobedient Robots project at UW changed how I see human-robot interaction. Traditional robotics aims for machines that follow instructions exactly, but what if we could make robots with their own creative input?</p>    
+                        <div class="grid grid-cols-2 gap-4">
+                            <img src="img/dr.jpeg" class="my-2 w-full" width="500" height="500"/>
+                            <img src="img/dr1.jpeg" class="my-2 w-full" width="500" height="500"/>
+                            <img src="img/dr2.jpeg" class="my-2 w-full" width="500" height="500"/>
+                            <img src="img/dr3.jpeg" class="my-2 w-full" width="500" height="500"/>
+                            <img src="img/dr4.jpeg" class="my-2 w-full" width="500" height="500"/>
+                            <img src="img/dr5.jpeg" class="my-2 w-full" width="500" height="500"/>
+                        </div>
+                        <div class="relative w-full aspect-video mb-4">
+                            <iframe 
+                                class="absolute top-0 left-0 w-full h-full"
+                                src="https://www.youtube.com/embed/OXfiaHRqUBg?si=wZagiAm4PfuD6lwT" 
+                                frameborder="0" 
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                allowfullscreen>
+                            </iframe>
+                        </div>
+                    </p>
+                    <!-- Add more content sections as needed -->
+                </div>
+            </div>
+
+        </div>
         <script>
             function showPage(pageName) {
                 // Update URL hash
@@ -488,6 +545,29 @@
             } else {
                 showPage("overview");
             }
+
+            function showBlogPost(postId) {
+                if (pageName === "consulting") {
+                    showBlogList();
+                }
+                document.querySelectorAll('#consulting-content > .grid').forEach(el => el.style.display = 'none');
+                document.getElementById(`blog-${postId}`).classList.remove('hidden');
+            }
+
+            function showBlogList() {
+                // Show the blog list
+                document.querySelectorAll('#consulting-content > .grid').forEach(el => el.style.display = 'grid');
+                
+                // Hide all blog posts
+                document.querySelectorAll('[id^="blog-"]').forEach(el => el.classList.add('hidden'));
+            }
+            function showBlogPost(postId) {
+    // Hide the blog list
+            document.querySelectorAll('#consulting-content > .grid').forEach(el => el.style.display = 'none');
+    // Show the selected blog post
+            document.getElementById(`blog-${postId}`).classList.remove('hidden');
+            }
+            
         </script>
     </body>
 </html>
