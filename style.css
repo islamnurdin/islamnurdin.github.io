@@ -115,10 +115,203 @@ h1 {
 }
 
 .footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #000;
-  color: #777;
+  background-color: #1a1a1a;
+  color: #fff;
+  padding: 80px 0 30px;
+  font-family: 'Nanum Gothic Coding', monospace;
+}
+
+.footer-content {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr 1.5fr;
+  gap: 40px;
+  padding: 0 40px;
+}
+
+.footer-section {
+  margin-bottom: 30px;
+}
+
+.footer-main {
+  padding-right: 40px;
+}
+
+.footer-main .tagline {
+  font-size: 1.2em;
+  margin: 15px 0;
+  color: #ffd700;
+}
+
+.footer-main .description {
+  color: #999;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+
+.footer-section h3 {
+  color: #fff;
+  font-size: 1.4em;
+  margin-bottom: 25px;
+  position: relative;
+}
+
+.footer-section h3::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 40px;
+  height: 3px;
+  background: #ffd700;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 12px;
+}
+
+.footer-section ul a {
+  color: #999;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-section ul a:hover {
+  color: #ffd700;
+}
+
+.team-members .member {
+  margin-bottom: 20px;
+}
+
+.team-members .name {
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.team-members .role {
+  color: #999;
+  font-size: 0.9em;
+}
+
+.social-links {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.social-link {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 15px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 5px;
+  transition: all 0.3s ease;
+}
+
+.social-link:hover {
+  background: #ffd700;
+  transform: translateY(-2px);
+}
+
+.newsletter {
+  margin-top: 30px;
+}
+
+.newsletter h4 {
+  margin-bottom: 15px;
+  color: #fff;
+}
+
+.subscribe-form {
+  display: flex;
+  gap: 10px;
+}
+
+.subscribe-form input {
+  flex: 1;
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+
+.subscribe-form button {
+  padding: 10px 20px;
+  background: #ffd700;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background: #3182ce;
+}
+
+.footer-bottom {
+  margin-top: 60px;
+  padding-top: 30px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.footer-info {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #999;
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #999;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #ffd700;
+}
+
+@media (max-width: 1200px) {
+  .footer-content {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .footer-main {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .footer-info {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
 }
 
 h2 {
@@ -330,5 +523,15 @@ h2 {
   width: 100%;
   height: auto;
   border-radius: 10px;
+}
+
+.github-link {
+    font-size: 1.2em;
+    color: inherit;
+    transition: color 0.3s ease;
+}
+
+.github-link:hover {
+    color: #6e5494; /* GitHub's purple color */
 }
 
