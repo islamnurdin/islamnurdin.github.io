@@ -165,6 +165,7 @@
             <p class="mt-4"> Teaching staff for an ECE class at UW</p>
         </div>
         <div id="projects-content" class="hidden">
+            <div id="projects-jorgo" class="mb-8"></div>
             <div id="projects-allstack" class="mb-8"></div>
             <div id="projects-dr" class="mb-8"></div>
             <div id="projects-labeltool" class="mb-8"></div>
@@ -174,7 +175,20 @@
             <div id="projects-graphql" class="mb-8"></div>
             <div id="projects-korean" class="mb-8"></div>
         </div>
-
+        <div id="jorgo-content" class="hidden">
+            <h2 class="text-2xl font-bold mb-2">Coming soon: Jorgo - Kyrgyz Programming Language</h2>
+            <p class="mb-4">
+                A programming language designed specifically for Kyrgyz speakers that is a simple translation of English syntax. <br>
+                Started as a joke with my friends, I finally had the courage to start working on it.
+                Jorgo aims to make coding feel natural and intuitive in the Kyrgyz language, allowing native speakers to express programming concepts in their own tongue.
+            </p>
+            <ul class="list-disc pl-5 space-y-2">
+                <li>Python-like implementation with Kyrgyz syntax and semantics</li>
+                <li>Designed to capture Kyrgyz linguistic patterns and thought processes</li>
+                <li>Includes beginner-friendly documentation in Kyrgyz</li>
+                <li>Open-source project to promote tech literacy in Kyrgyzstan</li>
+            </ul>
+        </div>
         <div id="allstack-content" class="hidden">
             <h2 class="text-2xl font-bold mb-2">Allstack: AI Models Comparison</h2>
             <p class="mb-4">
@@ -521,14 +535,16 @@
                       button.classList.remove('hidden');
                   });
                 } else if (pageName === "projects") {
+                  document.getElementById("projects-jorgo").innerHTML =
+                    document.getElementById("jorgo-content").innerHTML;
+                  document.getElementById("projects-allstack").innerHTML =
+                    document.getElementById("allstack-content").innerHTML;
                   document.getElementById("projects-dr").innerHTML =
                     document.getElementById("dr-content").innerHTML;
                   document.getElementById("projects-labeltool").innerHTML =
                       document.getElementById("labeltool-content").innerHTML;
                   document.getElementById("projects-theia").innerHTML =
                       document.getElementById("theia-content").innerHTML;
-                  document.getElementById("projects-allstack").innerHTML =
-                      document.getElementById("allstack-content").innerHTML;
                   document.getElementById("projects-figma").innerHTML =
                       document.getElementById("figma-projects-content").innerHTML;
                   document.getElementById("projects-graphql").innerHTML =
