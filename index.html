@@ -165,6 +165,7 @@
             <p class="mt-4"> Teaching staff for an ECE class at UW</p>
         </div>
         <div id="projects-content" class="hidden">
+            <div id="projects-allstack" class="mb-8"></div>
             <div id="projects-dr" class="mb-8"></div>
             <div id="projects-labeltool" class="mb-8"></div>
             <div id="projects-theia" class="mb-8"></div>
@@ -172,6 +173,23 @@
             <div id="projects-husky" class="mb-8"></div>
             <div id="projects-graphql" class="mb-8"></div>
             <div id="projects-korean" class="mb-8"></div>
+        </div>
+
+        <div id="allstack-content" class="hidden">
+            <h2 class="text-2xl font-bold mb-2">Allstack: AI Models Comparison</h2>
+            <p class="mb-4">
+                It's like Reddit for AI models—users can compare models, upvote their favorites, and add comments. <br>
+                There's a new AI model coming out almost every two weeks, which makes it hard to keep track of the best options. <br>
+                This platform solves that by letting you easily compare models side-by-side.
+            </p>
+            <img src="img/allstack.gif" class="my-2" width="800" height="500"/>
+            <p class="mt-4">
+                I plan to add more lists for AI agents, copilots, and include even more models.<br>
+                It's not fully ready yet—I know I should launch soon but life and chasing perfection gets in the way.
+                <a href="https://all-stack.com" class="text-blue-600 hover:underline" target="_blank" rel="noopener noreferrer">
+                Check it out!
+                </a>
+            </p>
         </div>
 
         <div id="dr-content" class="hidden">
@@ -509,6 +527,8 @@
                       document.getElementById("labeltool-content").innerHTML;
                   document.getElementById("projects-theia").innerHTML =
                       document.getElementById("theia-content").innerHTML;
+                  document.getElementById("projects-allstack").innerHTML =
+                      document.getElementById("allstack-content").innerHTML;
                   document.getElementById("projects-figma").innerHTML =
                       document.getElementById("figma-projects-content").innerHTML;
                   document.getElementById("projects-graphql").innerHTML =
